@@ -1,68 +1,77 @@
 body {
-  margin: 10px;
-  background: #11dbd5;
-  text-align: left;
-  font-family: "helvetica neue";
-  font-size: 14pt;
+    margin: 40px;
+    background: #11dbd5;
+   
+    font-family: "helvetica neue";
+    font-size: 16pt;
 }
 
 h1 {
-  font-size: 30pt;
-  color: black;
-  font-weight: bold;
+    font-size: 35pt;
+    color: black;
+    font-weight: bold;
 
 }
 
-h3{
-font-size: 20pt;
-  font-weight: bold;
+h3 {
+    font-size: 30pt;
+    font-weight: bold;
 
 }
 
 p {
-  text-align: left;
-  color: black;
-  left: 20px;
+    text-align: left;
+    color: black;
+    left: 20px;
 
 }
 
 a {
-  text-decoration: none;
-  color: aqua;
-  outline: 0;
+    text-decoration: none;
+    color: aqua;
+    outline: 0;
 
 }
 
 /*----IMAGE stuff----*/
 
-.imgFrontpage img {
-  width: 80%;
-  height: auto;
-  opacity: 1;
-
-}
-
 img {
-  max-width: 400px;
+    max-width: 350px;
+
 }
-
-
-/* GRID*/
-
 
 /*----grid stuff----*/
-
-.grid-container {
-  display: grid;
-  padding: 5px;
+#rig {
+    max-width:1000px;
+    margin:0 auto; /*center aligned*/
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color: none;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:50%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
-.grid-item {
-  border: 1px solid aqua);
-  padding: 10px;
-  font-size: 30px;
-  text-align: left;
+/* The wrapper for each item */
+.rig-cell {
+    margin:6px;
+    box-shadow:none;
+    display:block;
+    position: relative;
+    overflow:hidden;
 }
-
-
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+}
 
